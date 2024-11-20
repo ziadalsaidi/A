@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>باقات استثمار بالجنيه المصري</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>باقات استثمار بالجنيه المصري</h1>
+    </header>
+
+    <main>
+        <section class="plans">
+            <div class="plan" id="plan-500">
+                <h2>باقة 500 جنيه</h2>
+                <p>استثمر 500 جنيه واحصل على عوائد مميزة.</p>
+                <button class="subscribe-btn" onclick="showPaymentModal(500)">اشتراك</button>
+            </div>
+
+            <div class="plan" id="plan-1000">
+                <h2>باقة 1000 جنيه</h2>
+                <p>استثمر 1000 جنيه واحصل على عوائد أفضل.</p>
+                <button class="subscribe-btn" onclick="showPaymentModal(1000)">اشتراك</button>
+            </div>
+
+            <div class="plan" id="plan-2500">
+                <h2>باقة 2500 جنيه</h2>
+                <p>استثمر 2500 جنيه واستمتع بعوائد عالية.</p>
+                <button class="subscribe-btn" onclick="showPaymentModal(2500)">اشتراك</button>
+            </div>
+
+            <div class="plan" id="plan-5000">
+                <h2>باقة 5000 جنيه</h2>
+                <p>استثمر 5000 جنيه لتحقيق أكبر العوائد.</p>
+                <button class="subscribe-btn" onclick="showPaymentModal(5000)">اشتراك</button>
+            </div>
+
+            <div class="plan" id="plan-10000">
+                <h2>باقة 10000 جنيه</h2>
+                <p>استثمر 10000 جنيه لتحقيق أقصى الأرباح.</p>
+                <button class="subscribe-btn" onclick="showPaymentModal(10000)">اشتراك</button>
+            </div>
+
+            <div class="plan" id="plan-20000">
+                <h2>باقة 20000 جنيه</h2>
+                <p>استثمر 20000 جنيه للحصول على أفضل عوائد.</p>
+                <button class="subscribe-btn" onclick="showPaymentModal(20000)">اشتراك</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Payment -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <h2>طريقة الدفع</h2>
+            <p>لإتمام عملية الاشتراك، يرجى إرسال المبلغ إلى رقم المحفظة التالي عبر فودافون كاش:</p>
+            <p><strong>رقم المحفظة: 01032092547</strong></p>
+            <p>بعد التحويل، يرجى تحميل صورة التحويل لإتمام التسجيل.</p>
+            <form id="paymentForm">
+                <label for="amount">المبلغ المحول:</label>
+                <input type="text" id="amount" name="amount" readonly>
+                <br>
+                <label for="receipt">تحميل صورة التحويل:</label>
+                <input type="file" id="receipt" name="receipt" required>
+                <br>
+                <button type="submit">إتمام الدفع</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 موقع باقات استثمار. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
